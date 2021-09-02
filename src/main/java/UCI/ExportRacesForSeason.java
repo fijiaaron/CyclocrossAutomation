@@ -48,7 +48,7 @@ public class ExportRacesForSeason
 	public void setup()
 	{
 		driver = new ChromeDriver();
-		wait = new WebDriverWait(driver, 15);
+		wait = new WebDriverWait(driver, 10);
 		driver.get("https://dataride.uci.org/iframe/results/3");
 		pause(5);
 	}
@@ -63,13 +63,13 @@ public class ExportRacesForSeason
 	{
 		String raceType = "All"; // All, Individual
 		String category = "All"; // All, Men Elite, Women Elite, Men Junior, Women Junior
-		String season = "2020"; // 2022, 2021, etc
+		String season = "2022"; // 2022, 2021, etc
 
 		selectRaceType(raceType);
 		selectRaceCategory(category);
 		selectRaceSeason(season);
 
-		pause(20);
+		pause(10);
 		List<Competition> competitions = fetchCompetitions();
 		System.out.println("got competitions: " + competitions.size());
 
@@ -223,7 +223,7 @@ public class ExportRacesForSeason
 	public void printJSON(List<Competition> competitions, String filename) throws IOException
 	{
 
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		Gson gson = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
 		String json =  gson.toJson(competitions);
 		System.out.println(json);
 
