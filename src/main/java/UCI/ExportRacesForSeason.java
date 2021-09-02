@@ -1,27 +1,27 @@
-import UCI.Competition;
+package UCI;
+
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
-import com.opencsv.exceptions.CsvDataTypeMismatchException;
-import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class SimpleTest
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
+
+public class ExportRacesForSeason
 {
 	WebDriver driver;
 	WebDriverWait wait;
@@ -35,9 +35,16 @@ public class SimpleTest
 	By raceSeasonsDropdownArrow =  By.cssSelector("[aria-owns^=seasons_listbox] [class*=arrow]");
 	By raceSeasonsDropdownOptions = By.cssSelector("#seasons_listbox li");
 
-	By competitions = By.cssSelector("#competitions");
+	By competitionRow = By.cssSelector("#competitions table tbody tr");
 
-	@BeforeEach
+	public static void main(String[] args) throws IOException
+	{
+		var instance = new ExportRacesForSeason();
+		instance.setup();
+		instance.run();
+		instance.cleanup();
+	}
+
 	public void setup()
 	{
 		driver = new ChromeDriver();
@@ -46,11 +53,31 @@ public class SimpleTest
 		pause(5);
 	}
 
-	@AfterEach
 	public void cleanup()
 	{
 		pause(5);
 		driver.quit();
+	}
+
+	public void run() throws IOException
+	{
+		String raceType = "All"; // All, Individual
+		String category = "All"; // All, Men Elite, Women Elite, Men Junior, Women Junior
+		String season = "2020"; // 2022, 2021, etc
+
+		selectRaceType(raceType);
+		selectRaceCategory(category);
+		selectRaceSeason(season);
+
+		pause(20);
+		List<Competition> competitions = fetchCompetitions();
+		System.out.println("got competitions: " + competitions.size());
+
+		String filename = "competitions-" + season;
+
+		printCSV(competitions, filename + ".csv");
+
+		printJSON(competitions, filename + ".json");
 	}
 
 	public void pause(int seconds)
@@ -62,19 +89,6 @@ public class SimpleTest
 		{
 			e.printStackTrace();
 		}
-	}
-
-	@Test
-	public void findRaces() throws Exception
-	{
-		selectRaceType("Individual");
-		selectRaceCategory("Men Elite");
-		selectRaceSeason("2021");
-		pause(20);
-		List<Competition> competitions = fetchCompetitions();
-		System.out.println("got competitions: " + competitions.size());
-		System.out.println(Competition.toCSV(competitions));
-		printCSV(competitions);
 	}
 
 	public void selectRaceType(String raceType)
@@ -147,9 +161,9 @@ public class SimpleTest
 	{
 		List<Competition> competitions = new ArrayList<>();
 
-		By competitionRowSelector= By.cssSelector("#competitions table tbody tr");
+
 		List<WebElement> tableRows =
-				wait.until(presenceOfAllElementsLocatedBy(competitionRowSelector));
+				wait.until(presenceOfAllElementsLocatedBy(competitionRow));
 
 		System.out.println("found competition tableRows: " + tableRows.size());
 
@@ -185,7 +199,7 @@ public class SimpleTest
 		return competition;
 	}
 
-	public void printCSV(List<Competition> competitions) throws IOException
+	public void printCSV(List<Competition> competitions, String filename) throws IOException
 	{
 		CsvMapper mapper = new CsvMapper();
 		mapper.configure(JsonGenerator.Feature.IGNORE_UNKNOWN, true);
@@ -201,8 +215,19 @@ public class SimpleTest
 		ObjectWriter writer = mapper.writerFor(Competition.class).with(schema);
 		System.out.println("CSV: " + writer.toString());
 
-		File csvOutputFile = new File("competitions.csv");
+		File csvOutputFile = new File(filename);
 
 		writer.writeValues(csvOutputFile).writeAll(competitions);
 	}
+
+	public void printJSON(List<Competition> competitions, String filename) throws IOException
+	{
+
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		String json =  gson.toJson(competitions);
+		System.out.println(json);
+
+		gson.toJson(competitions, new FileWriter(filename));
+	}
+
 }

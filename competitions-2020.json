@@ -1,0 +1,227 @@
+[
+  {
+    "dataUID": "6ea90012-a049-4962-99c4-01bcdd86c641",
+    "date": "23 Feb 2020",
+    "description": "Internationale Sluitingsprijs Oostmalle",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57835?disciplineId\u003d3",
+    "country": "BEL",
+    "competitionClass": "C1"
+  },
+  {
+    "dataUID": "f3fcc1b6-f1e2-423f-a5d2-a7c9f64d27b2",
+    "date": "22 Feb 2020",
+    "description": "GP Leuven",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57834?disciplineId\u003d3",
+    "country": "BEL",
+    "competitionClass": "C1"
+  },
+  {
+    "dataUID": "4c098cf2-3bff-430b-951a-d6263721ff35",
+    "date": "16 Feb 2020",
+    "description": "Vestingcross Hulst",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57918?disciplineId\u003d3",
+    "country": "NED",
+    "competitionClass": "C1"
+  },
+  {
+    "dataUID": "c9cfe3a3-951a-4467-8379-247b9297b780",
+    "date": "15 Feb 2020",
+    "description": "Telenet Superprestige Middelkerke",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57833?disciplineId\u003d3",
+    "country": "BEL",
+    "competitionClass": "C1"
+  },
+  {
+    "dataUID": "2e53ab88-3af2-410a-8d43-c9c12ed63c89",
+    "date": "08 Feb 2020",
+    "description": "DVV Verzekeringen trofee Krawatencross",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57831?disciplineId\u003d3",
+    "country": "BEL",
+    "competitionClass": "C1"
+  },
+  {
+    "dataUID": "b458c004-8f70-4244-b07f-4cd99ab050bd",
+    "date": "05 Feb 2020",
+    "description": "Parkcross Maldegem",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57830?disciplineId\u003d3",
+    "country": "BEL",
+    "competitionClass": "C2"
+  },
+  {
+    "dataUID": "8ba8b5dd-3fb1-40df-9f2a-1a3a928bb5f9",
+    "date": "01 Feb-02 Feb 2020",
+    "description": "UCI Cyclo-cross World Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57738?disciplineId\u003d3",
+    "country": "SUI",
+    "competitionClass": "CM"
+  },
+  {
+    "dataUID": "1ffb0f10-df51-4740-ac99-824e2dadac97",
+    "date": "26 Jan 2020",
+    "description": "2019-2020 Telenet UCI Cyclo-cross World Cup, Hoogerheide Provincie Noord-Brabant",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57747?disciplineId\u003d3",
+    "country": "NED",
+    "competitionClass": "CDM"
+  },
+  {
+    "dataUID": "27eda8b4-c0a1-4be1-bacd-202ef2824dc5",
+    "date": "25 Jan 2020",
+    "description": "Kasteelcross Zonnebeke",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57829?disciplineId\u003d3",
+    "country": "BEL",
+    "competitionClass": "C2"
+  },
+  {
+    "dataUID": "86d471b9-93d7-48a5-8e89-83b5cd807241",
+    "date": "19 Jan 2020",
+    "description": "2019-2020 Telenet UCI Cyclo-cross World Cup, Nommay Pays de Montbeliard",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57748?disciplineId\u003d3",
+    "country": "FRA",
+    "competitionClass": "CDM"
+  },
+  {
+    "dataUID": "9f191e53-04bd-48a0-be55-aea2f9226076",
+    "date": "19 Jan 2020",
+    "description": "ZAO-sama Cup Tohoku CX Series",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57904?disciplineId\u003d3",
+    "country": "JPN",
+    "competitionClass": "C2"
+  },
+  {
+    "dataUID": "16ab246a-0ca0-46f2-8d83-34bd04829487",
+    "date": "19 Jan 2020",
+    "description": "Grand Prix Möbel Alvisse",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57906?disciplineId\u003d3",
+    "country": "LUX",
+    "competitionClass": "C2"
+  },
+  {
+    "dataUID": "fe53de65-8595-40fe-a675-b2258b3d8797",
+    "date": "13 Jan 2020",
+    "description": "Cyclocross Otegem",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57828?disciplineId\u003d3",
+    "country": "BEL",
+    "competitionClass": "C2"
+  },
+  {
+    "dataUID": "d5d963f6-27f8-4723-81c2-13ad8f4613e4",
+    "date": "12 Jan 2020",
+    "description": "Czech National Championships - ME, WE",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57915?disciplineId\u003d3",
+    "country": "CZE",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "e23ba9a6-26ab-42cd-9e76-d4eb69cf765b",
+    "date": "12 Jan 2020",
+    "description": "Danish National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57939?disciplineId\u003d3",
+    "country": "DEN",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "6cf47d5d-608e-4820-ba61-1e9b11d2b218",
+    "date": "12 Jan 2020",
+    "description": "Swiss National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57940?disciplineId\u003d3",
+    "country": "SUI",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "6ddfa8ce-80bc-4965-b0f2-65f21eecb614",
+    "date": "12 Jan 2020",
+    "description": "Irish National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/58577?disciplineId\u003d3",
+    "country": "IRL",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "5ad8d555-c6ac-456b-afdc-8d0e951dae81",
+    "date": "12 Jan 2020",
+    "description": "Hungarian national championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/59095?disciplineId\u003d3",
+    "country": "HUN",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "3859d6f2-6828-4246-983f-31faa7d1306e",
+    "date": "12 Jan 2020",
+    "description": "Croatian national championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/59770?disciplineId\u003d3",
+    "country": "CRO",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "915e6429-7b94-44d4-b31a-24fdf9f6be4f",
+    "date": "11 Jan-12 Jan 2020",
+    "description": "Italian National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57846?disciplineId\u003d3",
+    "country": "ITA",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "1e0b04f0-69ce-4c4e-9082-906bbbb798c5",
+    "date": "11 Jan-12 Jan 2020",
+    "description": "Swedish National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57855?disciplineId\u003d3",
+    "country": "SWE",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "4ac4ec51-e9a3-489d-afef-b57ad079b201",
+    "date": "11 Jan-12 Jan 2020",
+    "description": "British National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57936?disciplineId\u003d3",
+    "country": "GBR",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "8bef8952-1a19-4d43-9b0b-5fedbd6d5cdc",
+    "date": "11 Jan-12 Jan 2020",
+    "description": "Dutch National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57937?disciplineId\u003d3",
+    "country": "NED",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "a7cea066-b253-49ec-b44c-dbe145b5e637",
+    "date": "11 Jan-12 Jan 2020",
+    "description": "French National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57938?disciplineId\u003d3",
+    "country": "FRA",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "96f3e79a-8079-418b-9945-e437cc11c1be",
+    "date": "11 Jan-12 Jan 2020",
+    "description": "German National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/57942?disciplineId\u003d3",
+    "country": "GER",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "8cf50aef-4bfc-405e-96e8-30a2f38f1483",
+    "date": "11 Jan-12 Jan 2020",
+    "description": "Belgian National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/58426?disciplineId\u003d3",
+    "country": "BEL",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "59f313de-db62-4a2c-aa81-078750f27986",
+    "date": "11 Jan-12 Jan 2020",
+    "description": "Austrian National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/58568?disciplineId\u003d3",
+    "country": "AUT",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "756b4748-622a-4ff5-9703-b37969ddcd2c",
+    "date": "11 Jan 2020",
+    "description": "Luxembourg National Championships",
+    "link": "https://dataride.uci.org/iframe/CompetitionResults/58570?disciplineId\u003d3",
+    "country": "LUX",
+    "competitionClass": "CN"
+  },
+  {
+    "dataUID": "1300bf52-6337-4e5c-b
